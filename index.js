@@ -3,7 +3,7 @@ const app=express();
 const cors=require("cors")
 
 app.use(express.json())
-app.use(cors({origin:"https://www.tektontechsolutions.com/"}))
+app.use(cors({origin:"https://www.tektontechsolutions.com"}))
 
 const mail_app=require("./API/mail-api.js")
 app.use('/email-api',mail_app);
